@@ -1,0 +1,92 @@
+
+<html>
+<head>
+    <title>Menu</title>
+    <style>
+        body {
+            background-image: url('wallpaper 1.jpg');
+            font-family: Arial, sans-serif;
+            color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        b {
+            font-size: 24px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: black;
+            transition: color 0.3s ease;
+            position: relative;
+            margin: 10px;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: green;
+            transition: width 0.3s ease;
+        }
+
+        a:hover::before {
+            width: 100%;
+        }
+
+        a::after {
+            content: '\25BA';
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        a:hover::after {
+            opacity: 1;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+       
+    </style>
+</head>
+<body>
+    <b>
+        <center>
+            <br/><br/>
+            <a href="main.html" target="p">Home</a><br/><br/>
+            <a href="about us.html" target="p">About Us</a><br/><br/>
+            <a href="sign up.php" target="p">Sign Up</a><br/><br/>
+            <a href="login page.php" target="p">Login Page</a><br/><br/>
+            <a href="cars.php" target="p">Cars Details</a><br/>
+<br/>
+<a href="cart.php" target="p">Cart</a><br/>
+<br/>
+
+<a href="contact details.html" target="p">Contact Details</a><br/>
+
+
+
+        </center>
+    </b>
+</body>
+</html>
